@@ -74,7 +74,7 @@ Microsoft OneDrive is a **cloud-supported storage system**. It is managed by **d
 
 ---
 
-## Part 4: Supervised vs Unsupervised Learning
+## Supervised vs Unsupervised Learning
 
 | 구분              | 지도학습 (Supervised Learning)                                      | 비지도학습 (Unsupervised Learning)                             |
 |-------------------|---------------------------------------------------------------------|----------------------------------------------------------------|
