@@ -3,7 +3,7 @@
 # Day 1
 
 # Git, GitHub, and Basic Version Control Concepts
-📘 Part 1: Core Concepts
+# 📘 Part 1: Core Concepts
 ## Git
 Git is an open-source Version Control System (VCS) that helps developers manage and track changes in source code during software development.
 
@@ -29,7 +29,6 @@ cd : Change directory
 mkdir : Create a new directory
 
 # 🔧 GitHub Commands
-
 # Command	Description
 git clone <url>	: Clone a repository from GitHub to your machine
 git add .	: Stage all new and changed files for commit
