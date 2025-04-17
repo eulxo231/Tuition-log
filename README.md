@@ -50,7 +50,9 @@ Microsoft OneDrive is a **cloud-supported storage system**. It is managed by **d
 
 ---
 
-## Part 3: AI, Machine Learning (ML), and Deep Learning (DL)
+# Day 2
+
+## AI, Machine Learning (ML), and Deep Learning (DL)
 
 ### 🔍 Definitions
 
