@@ -98,6 +98,93 @@ Microsoft OneDrive is a **cloud-supported storage system**. It is managed by **d
 
 ---
 
+# DAY 3
 
+## Boxplot
 
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+np.random.seed(10)
+data = np.random.randn(50) * 10  # 평균 0, 표준편차 10을 따르는 정규분포 데이터
+data = np.append(data, [50, -40])  # 이상치 추가
+
+# 박스플롯 그리기 (이상치 표시)
+plt.boxplot(data)
+
+# 제목 및 라벨 추가
+plt.title("Box Plot with Outliers")
+plt.ylabel("Value")
+plt.show()
+```
+## How to translate a boxplot
+
+# 📦 Boxplot Interpretation
+
+| Term | Description |
+|:-----|:------------|
+| **Minimum** | Position 1.5 IQR below the first quartile (Q1) |
+| **First Quartile (Q1)** | Marks the 25% position at the bottom of the box |
+| **Second Quartile (Q2)** | Median represented by the line inside the box, indicating 50% position |
+| **Third Quartile (Q3)** | Marks the 75% position at the top of the box |
+| **Maximum** | Position 1.5 IQR above the third quartile (Q3) |
+| **Interquartile Range (IQR)** | The range between Q1 and Q3 |
+| **Whisker** | Extends from the box to indicate the range of the data, up to the smallest and largest values within 1.5 IQR |
+| **Outlier** | Data points beyond the minimum and maximum; if any exist, they are plotted beyond the whiskers |
+
+![image](https://github.com/user-attachments/assets/cb717364-0953-4395-a32e-e450d6ac82f8)
+
+## Iris Data set
+🌸 Iris Dataset and KNN Algorithm
+📘 Part 1: Iris Dataset
+🌼 What is the Iris Dataset?
+The Iris dataset is a famous dataset introduced by statistician Ronald Fisher in 1936.
+It is commonly used for testing machine learning models and data analysis.
+
+Sepal Length (cm) | Sepal Width (cm) | Petal Length (cm) | Petal Width (cm) | Species
+5.1 | 3.5 | 1.4 | 0.2 | setosa
+4.9 | 3.0 | 1.4 | 0.2 | setosa
+4.7 | 3.2 | 1.3 | 0.2 | setosa
+4.6 | 3.1 | 1.5 | 0.2 | setosa
+5.0 | 3.6 | 1.4 | 0.2 | set
+
+# 📘 Part 2: K-Nearest Neighbors (KNN)
+# 🤔 What is KNN?
+K-Nearest Neighbors (KNN) is a simple and widely used machine learning algorithm.
+It classifies new data points based on the labels of the K closest data points.
+
+# 💡 How KNN Works:
+When a new data point is given, find the K nearest data points in the existing dataset.
+
+Determine the most common class (species) among those K points.
+
+Assign the new data point to that class.
+
+# ℹ️ Tip:
+
+A small K (e.g., K=1) means the prediction is highly influenced by nearby points.
+A larger K (e.g., K=10) smooths the decision boundary and follows broader trends.
+
+# Formulas
+
+## Standardization Formula: 
+
+Z = (X - μ) / σ
+
+X : Original data
+μ : Mean
+σ : Standard Deviation
+
+Distance Calculation (Euclidean Distance)
+
+For data generalized to N dimensions, the distance between two points P1(x₁, x₂, ..., xₙ) and P2(y₁, y₂, ..., yₙ):
+
+In 2 dimensions:
+
+d(P₁, P₂) = √((x₁ - x₂)² + (y₁ - y₂)²)
+
+In N dimensions:
+
+d(P₁, P₂) = √(∑ (i=1 to n) (xᵢ - yᵢ)²)
 
